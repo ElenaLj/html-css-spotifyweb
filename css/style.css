@@ -31,8 +31,22 @@ body {
     justify-content: space-between;
 }
 
+.icon-top, 
+.icon-bottom {
+    padding: 10px;
+}
+
+#download img {
+    width: 20px;
+}
+
 #playlist {
     display: none;
+}
+
+#profile img {
+    background-color: #808080;
+    border-radius: 50%;
 }
 
 .col-right {

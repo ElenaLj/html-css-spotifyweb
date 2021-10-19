@@ -26,6 +26,18 @@ body {
     text-transform: uppercase;
 }
 
+section.title {
+    margin: 20px;
+}
+
+h1, h2, h3 {
+    color: white;
+}
+
+h4 {
+    color: #808080;;
+}
+
 /* *** mobile-first format -bootstrap default 576px (min-width: 0px)*** */
 
 /* *** spotify interface left *** */
@@ -97,9 +109,20 @@ main nav ul li {
 }
 
 main .row {
+    margin: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+}
+
+main .row .song {
+    width: 200px;
+    margin: 10px;
+}
+
+main .row .song-cover img {
+    width: 100%;
+    object-fit: cover;
 }
 
 /* *** footer *** */
@@ -158,34 +181,34 @@ footer {
     border: 1px solid white; */
 }
 
+.debug .title {
+    /* background-color: violet; */
+}
+
 .debug .row {
     /* height: 200px; */
-    width: 100%;
+    /* width: 100%; */
     /* background-color: yellow; */
     border: 1px solid white;
 }
 
-.debug .title {
-    background-color: violet;
-}
-
 .debug .song {
-    height: 150px;
-    width: 100px;
-    background-color: blue;
-    border: 1px solid black;
+    /* height: 150px;
+    width: 100px; */
+    /* background-color: blue; */
+    /* border: 1px solid black; */
 }
 
 .debug .song-cover {
-    height: 70px;
-    width: 100%;
-    background-color: chartreuse;
+    /* height: 70px;
+    width: 100%; */
+    /* background-color: chartreuse; */
 }
 
 .debug .song-title {
-    height: 40px;
-    width: 100%;
-    background-color: red;
+    /* height: 40px;
+    width: 100%; */
+    /* background-color: red; */
 }
 
 .debug footer {

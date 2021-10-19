@@ -30,11 +30,9 @@ body {
 
 footer {
     height: 100px;
-    background-color: lightsalmon;
     position: fixed;
     bottom: 0;
     left: 0;
-    /* z-index: 999 */
 }
 
 /* *** debug *** */
@@ -47,4 +45,9 @@ footer {
 .debug .col-right {
     width: 90vw;
     background-color: orangered;
+}
+
+.debug footer {
+    background-color: lightsalmon;
+    /* z-index: 999 */
 }

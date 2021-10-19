@@ -16,13 +16,19 @@ body {
 }
 
 .flex {
+    /* width: 100vw; */
     display: flex;
 }
 
-/* *** mobile-first format -bootstrap default 576px*** */
+/* *** mobile-first format -bootstrap default 576px (min-width: 0px)*** */
 
 /* *** spotify interface *** */
+.col-left {
+    width: 10vw;
+}
+
 .col-right {
+    width: 90vw;
     overflow-y: scroll;
 }
 
@@ -35,15 +41,26 @@ footer {
     left: 0;
 }
 
+/* *** media queries *** */
+
+@media screen and (min-width: 576px) {
+    .col-left {
+        width: 40vw;
+    }
+
+    .col-right {
+        width: 60vw;
+    }
+}
 /* *** debug *** */
 
 .debug .col-left {
-    width: 10vw;
+    /* width: 10vw; */
     background-color: orange;
 }
 
 .debug .col-right {
-    width: 90vw;
+    /* width: 90vw; */
     background-color: orangered;
 }
 

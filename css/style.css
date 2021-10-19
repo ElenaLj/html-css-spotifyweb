@@ -10,6 +10,41 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.col-left,
+.col-right {
+    height: calc(100vh - 100px);
+}
+
+.flex {
+    display: flex;
+}
+
 /* *** mobile-first format -bootstrap default 576px*** */
 
+/* *** spotify interface *** */
+.col-right {
+    overflow-y: scroll;
+}
+
+/* *** footer *** */
+
+footer {
+    height: 100px;
+    background-color: lightsalmon;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    /* z-index: 999 */
+}
+
 /* *** debug *** */
+
+.debug .col-left {
+    width: 10vw;
+    background-color: orange;
+}
+
+.debug .col-right {
+    width: 90vw;
+    background-color: orangered;
+}

@@ -96,6 +96,12 @@ main nav ul li {
     border: none;
 }
 
+main .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
 /* *** footer *** */
 
 footer {
@@ -150,6 +156,36 @@ footer {
     height: 50px; */
     /* background-color: turquoise;
     border: 1px solid white; */
+}
+
+.debug .row {
+    height: 200px;
+    width: 100%;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+.debug .title {
+    background-color: violet;
+}
+
+.debug .song {
+    height: 150px;
+    width: 100px;
+    background-color: blue;
+    border: 1px solid black;
+}
+
+.debug .song-cover {
+    height: 70px;
+    width: 100%;
+    background-color: chartreuse;
+}
+
+.debug .song-title {
+    height: 40px;
+    width: 100%;
+    background-color: red;
 }
 
 .debug footer {

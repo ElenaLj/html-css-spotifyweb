@@ -125,6 +125,10 @@ main .row .song-cover img {
     object-fit: cover;
 }
 
+main .song-title {
+    text-align: center;
+}
+
 /* *** footer *** */
 
 footer {

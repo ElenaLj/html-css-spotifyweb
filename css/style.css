@@ -22,7 +22,7 @@ body {
 
 /* *** mobile-first format -bootstrap default 576px (min-width: 0px)*** */
 
-/* *** spotify interface *** */
+/* *** spotify interface left *** */
 .col-left {
     width: 10vw;
     background-color: black;
@@ -31,17 +31,21 @@ body {
     justify-content: space-between;
 }
 
+.icons {
+    text-align: center;
+}
+
 .icon-top, 
 .icon-bottom {
     padding: 10px;
 }
 
-#download img {
-    width: 20px;
-}
-
 #playlist {
     display: none;
+}
+
+#download img {
+    width: 20px;
 }
 
 #profile img {
@@ -49,13 +53,32 @@ body {
     border-radius: 50%;
 }
 
+/* * *** spotify interface right *** */ 
 .col-right {
     width: 90vw;
+    background-color: #141922;
     overflow-y: scroll;
 }
 
 .col-right header {
     height: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    line-height: 100px;
+    text-align: right;
+    /* position: fixed;
+    top: 0;
+    right: 0; */
+}
+
+.col-right button {
+    margin: 10px;
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 /* *** footer *** */
@@ -92,11 +115,11 @@ footer {
 
 .debug .col-right {
     /* width: 90vw; */
-    background-color: orangered;
+    /* background-color: orangered; */
 }
 
 .debug header {
-    background-color: olivedrab;
+    /* background-color: olivedrab; */
     border: 1px solid white;
 }
 

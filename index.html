@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="clearfix debug">
+<body class="debug">
     <div class="flex">
         <!-- left column  -->
         <aside class="col-left">
@@ -19,25 +19,31 @@
             <div class="icons">
                 <!-- spotify small logo -->
                 <div class="icon-top">
-                    <img src="img/logo-small.svg" alt="spotify logo small">
+                    <img id="hide" src="img/logo-small.svg" alt="spotify logo small">
+                    <img class="show" src="img/logo.svg" alt="spotify logo large">
                 </div>
                 <!-- /spotify small logo -->
 
                 <!-- spotify homepage icon -->
                 <div class="icon-top">
                     <img src="img/home.svg" alt="spotify homepage">
+                    <div class="show">Home</div>
                 </div>
                 <!-- /spotify homepage icon -->
 
                 <!-- search icon -->
                 <div class="icon-top">
                     <img src="img/search.svg" alt="search">
+                    <div class="show">
+                        <span>Cerca</span>
+                    </div>
                 </div>
                 <!-- /search icon -->
 
                 <!-- library icon -->
                 <div class="icon-top">
                     <img src="img/libreria.svg" alt="spotify library">
+                    <div class="show">La tua libreria</div>
                 </div>
                 <!-- /library icon -->
 
@@ -53,12 +59,18 @@
                 <!-- download icon -->
                 <div id="download" class="icon-bottom">
                     <img src="img/download.svg" alt="download icon">
+                    <div class="show">
+                        <span>Installa app</span>
+                    </div>
                 </div>
                 <!-- /download icon -->
 
                 <!-- profile icon -->
                 <div id="profile" class="icon-bottom">
                     <img src="img/profile.svg" alt="your profile">
+                    <div class="show">
+                        <span>John Doe</span>
+                    </div>
                 </div>
                 <!-- /profile icon -->
             </div>

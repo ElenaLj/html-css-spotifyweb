@@ -20,6 +20,14 @@ body {
     height: calc(100vh - 100px);
 }
 
+.col-left .show {
+    color: #808080;
+    margin-left: 3px;
+    font-size: 13px;
+    font-weight: 600;
+    display: none;
+} 
+
 .uppercase {
     font-size: 14px;
     font-weight: 700;
@@ -152,6 +160,27 @@ footer {
     .col-left {
         width: 30vw;
     }
+
+    .icon-top, 
+    .icon-bottom {
+        display: flex;
+        align-items: center;
+    }
+
+    .icon-top #hide {
+        display: none;
+    }
+
+    .icon-top img, 
+    .icon-bottom img {
+        width: 20%;
+    }
+
+    .col-left .show {
+        width: 70%;
+        display: inline-block;
+        text-align: left;
+    } 
 
     #playlist {
         display: block;

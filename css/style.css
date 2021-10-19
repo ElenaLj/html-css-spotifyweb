@@ -35,6 +35,9 @@ body {
     overflow-y: scroll;
 }
 
+#playlist {
+    display: none;
+}
 /* *** footer *** */
 
 footer {
@@ -53,6 +56,10 @@ footer {
 
     .col-right {
         width: 70vw;
+    }
+
+    #playlist {
+        display: block;
     }
 }
 /* *** debug *** */

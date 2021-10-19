@@ -25,6 +25,9 @@ body {
 /* *** spotify interface *** */
 .col-left {
     width: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .col-right {
@@ -45,11 +48,11 @@ footer {
 
 @media screen and (min-width: 576px) {
     .col-left {
-        width: 40vw;
+        width: 30vw;
     }
 
     .col-right {
-        width: 60vw;
+        width: 70vw;
     }
 }
 /* *** debug *** */
@@ -64,7 +67,15 @@ footer {
     background-color: orangered;
 }
 
+.debug .icon-top, 
+.debug .icon-bottom {
+    height: 10vh;
+    background-color: maroon;
+    border: 1px solid white;
+}
+
 .debug footer {
+    width: 100vw;
     background-color: lightsalmon;
     /* z-index: 999 */
 }

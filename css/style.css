@@ -10,14 +10,14 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.col-left,
-.col-right {
-    height: calc(100vh - 100px);
-}
-
 .flex {
     /* width: 100vw; */
     display: flex;
+}
+
+.col-left,
+.col-right {
+    height: calc(100vh - 100px);
 }
 
 /* *** mobile-first format -bootstrap default 576px (min-width: 0px)*** */
@@ -25,6 +25,7 @@ body {
 /* *** spotify interface *** */
 .col-left {
     width: 10vw;
+    background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -72,7 +73,7 @@ footer {
 
 .debug .col-left {
     /* width: 10vw; */
-    background-color: orange;
+    /* background-color: orange; */
 }
 
 .debug .col-right {
@@ -85,12 +86,12 @@ footer {
     border: 1px solid white;
 }
 
-.debug .icon-top, 
+/* .debug .icon-top, 
 .debug .icon-bottom {
     height: 10vh;
     background-color: maroon;
     border: 1px solid white;
-}
+} */
 
 .debug footer {
     width: 100vw;

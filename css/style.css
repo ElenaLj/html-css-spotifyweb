@@ -68,6 +68,10 @@ h4 {
     padding: 10px;
 }
 
+#logo-large {
+    display: none;
+}
+
 #playlist {
     display: none;
 }
@@ -170,14 +174,19 @@ footer {
         width: 200px;
     }
 
+    #logo-small {
+        display: none;
+    }
+
+    #logo-large {
+        width: 80%;
+        display: block;
+    }
+
     .icon-top, 
     .icon-bottom {
         display: flex;
         align-items: center;
-    }
-
-    .icon-top #hide {
-        display: none;
     }
 
     .icon-top img, 

@@ -205,10 +205,16 @@ footer {
     }
 
     .col-left .show {
-        width: 70%;
+        /* width: 70%; */
         display: inline-block;
         text-align: left;
-    } 
+    }
+    
+    .icon-top.overflow {
+        height: 150px;
+        overflow-y: auto;
+        align-items: flex-start;    
+    }
 
     #playlist {
         display: block;
@@ -217,7 +223,7 @@ footer {
 
     #playlist ul {
         width: 100%;
-        height: 200px;
+        /* height: 200px; */
         list-style: none;
         overflow-y: auto;
     }
@@ -232,6 +238,12 @@ footer {
 
     .col-right header {
         width: calc(100% - 200px);
+    }
+}
+
+@media screen and (max-height: 500px) {
+    #playlist {
+        display: none;
     }
 }
 

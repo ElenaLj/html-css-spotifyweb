@@ -145,7 +145,7 @@ main .row {
     /* margin: 20px; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 
 main .row .song {
@@ -172,9 +172,57 @@ main .song-title {
 
 footer {
     height: 100px;
+    background-color: #282828;
     position: fixed;
     bottom: 0;
     left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer i {
+    color: #797b80;;
+}
+
+footer .footer-left,
+footer .footer-center,
+footer .footer-right {
+    margin: 0px 10px;
+}
+
+footer .footer-left {
+    display: flex;
+    align-items: center;
+}
+
+footer .footer-left > * {
+    margin-right: 15px;
+}
+
+/* .footer-left::after {
+    content: "\f004" "\f07b";
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900;
+    font-size: 20px;
+    color: #797b80;
+    
+} */
+
+footer .song-title h4 {
+    margin-top: 0px;
+}
+
+footer .footer-icons {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-left img {
+    height: 40%;
+}
+
+footer .song-title {
+    height: 40%;
 }
 
 /* *** media queries *** */
@@ -211,7 +259,7 @@ footer {
     }
     
     .icon-top.overflow {
-        height: 150px;
+        height: 200px;
         overflow-y: auto;
         align-items: flex-start;    
     }
@@ -317,7 +365,25 @@ footer {
 
 .debug footer {
     width: 100vw;
-    background-color: lightsalmon;
-    border: 1px solid white;
+    /* background-color: lightsalmon; */
+    /* border: 1px solid white; */
     /* z-index: 999 */
+}
+
+.debug .footer-left {
+    /* width: 20%;
+    height: 100%;
+    background-color: coral; */
+}
+
+.debug .footer-center {
+    width: 50%;
+    height: 100%;
+    background-color: red;
+}
+
+.debug .footer-right {
+    width: 20%;
+    height: 100%;
+    background-color: yellow;
 }

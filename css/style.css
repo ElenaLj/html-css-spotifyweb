@@ -213,8 +213,14 @@ footer .song-title h4 {
 }
 
 footer .footer-icons {
+    height: 40px;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.footer-icons i {
+    font-size: 15px;
 }
 
 footer .footer-left img {
@@ -237,8 +243,10 @@ footer .footer-left img {
     line-height: 35px;
 }
 
-.top-bar > i {
+.top-bar > i,
+.footer-right > i {
     margin-right: 15px;
+    font-size: 15px;
     vertical-align: middle;
 }
 
@@ -258,19 +266,28 @@ footer .footer-center .bottom-bar {
     font-weight: 700;
 }
 
-#progressbar {
-    width: 75%;
+.progressbar {
+    width: 80%;
     height: 5px;
-    background-color: lightgrey;
+    background-color: #5a5a5a;
     border-radius: 13px;
   }
 
-#progressbar>div {
+.progressbar>div {
     background-color: #adadad;
     width: 30%;
     height: 100%;
     border-radius: 10px;
   }
+
+footer .footer-right {
+    line-height: 100px;
+}  
+
+.footer-right div.progressbar {
+    display: inline-block;
+    width: 50px;
+}
   
 
 /* *** media queries *** */
@@ -431,7 +448,7 @@ footer .footer-center .bottom-bar {
 }
 
 .debug .footer-right {
-    width: 20%;
-    height: 100%;
-    background-color: yellow;
+    /* width: 20%;
+    height: 100%; */
+    /* background-color: yellow; */
 }

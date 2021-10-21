@@ -38,6 +38,10 @@ section.title {
     margin: 20px;
 }
 
+h1 {
+    font-size: 25px;
+}
+
 h1, h2, h3 {
     color: white;
 }
@@ -149,8 +153,8 @@ main .row {
 }
 
 main .row .song {
-    width: 200px;
-    margin: 10px;
+    width: 150px;
+    margin: 5px;
 }
 
 main .row .song-cover img {
@@ -224,7 +228,7 @@ footer .footer-icons {
 }
 
 footer .footer-left img {
-    height: 40%;
+    height: 50%;
 }
 
 /* footer .song-title {
@@ -292,6 +296,28 @@ footer .footer-right {
 
 /* *** media queries *** */
 
+@media screen and (min-width: 420px) {
+
+    main .row {
+        justify-content: center;
+    }
+   
+    .footer-left > div,
+    .footer-right {
+        display: none;
+    }
+
+    .footer-center {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 460px) {
+    main .row {
+        justify-content: space-around;
+    }
+}
+
 @media screen and (min-width: 576px) {
     .col-left {
         width: 200px;
@@ -351,6 +377,38 @@ footer .footer-right {
 
     .col-right header {
         width: calc(100% - 200px);
+    }
+
+    main .row {
+        justify-content: flex-start;
+    }
+
+    footer {
+        justify-content: space-evenly;
+    }
+   
+    .footer-left > div {
+        display: inline-block;
+    }
+
+    .footer-center {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .footer-center {
+        width: 45%;
+    }
+
+    .footer-right {
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .footer-center {
+        width: 50%;
     }
 }
 

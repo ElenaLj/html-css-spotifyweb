@@ -11,7 +11,6 @@ body {
 }
 
 .flex {
-    /* width: 100vw; */
     display: flex;
 }
 
@@ -72,9 +71,9 @@ h4 {
     justify-content: space-between;
 }
 
-.icons {
+/* .icons {
     text-align: center;
-}
+} */
 
 .icon-top, 
 .icon-bottom {
@@ -84,6 +83,11 @@ h4 {
 
 #logo-large {
     display: none;
+}
+
+#green-side-border {
+    color: white;
+    border-left: 2px solid #adff2f;
 }
 
 #playlist {
@@ -125,6 +129,7 @@ hr {
     overflow-y: scroll;
 }
 
+/* *** header *** */
 .col-right header {
     height: 100px;
     width: calc(100vw - 55px);
@@ -152,6 +157,8 @@ button:hover {
     cursor: pointer;
 }
 
+/* *** main *** */
+
 main {
     margin-top: 100px;
     padding: 20px;
@@ -165,11 +172,15 @@ main nav ul li {
     display: inline-block;
     margin: 10px 15px;
     color: #797b80;
-    border: none;
+}
+
+li#green-border {
+    color: white;
+    line-height: 30px;
+    border-bottom: 2px solid #adff2f;;
 }
 
 main .row {
-    /* margin: 20px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -189,6 +200,8 @@ main .row .song-cover img {
     width: 100%;
     object-fit: cover;
 }
+
+/* *** overlay effect *** */
 
 .overlay {
     position: absolute;
@@ -235,6 +248,7 @@ main .song-title {
 
 footer {
     height: 100px;
+    width: 100vw;
     background-color: #282828;
     position: fixed;
     bottom: 0;
@@ -498,29 +512,22 @@ footer .footer-right {
     }
 }
 
-/* @media only screen 
-  and (min-device-width: 576px) 
-  and (max-device-width: 1400px)
-   {
- .col-left {width: 200px;}
-}  */
-
 /* *** debug *** */
 
-.debug .col-left {
-    /* width: 10vw; */
-    /* background-color: orange; */
-}
+/* .debug .col-left {
+    width: 10vw;
+    background-color: orange;
+} */
 
-.debug .col-right {
-    /* width: 90vw; */
-    /* background-color: orangered; */
-}
+/* .debug .col-right {
+    width: 90vw; 
+    background-color: orangered;
+} */
 
-.debug header {
-    /* background-color: olivedrab; */
-    /* border: 1px solid white; */
-}
+/* .debug header {
+    background-color: olivedrab;
+    border: 1px solid white;
+} */
 
 /* .debug .icon-top, 
 .debug .icon-bottom {
@@ -529,64 +536,64 @@ footer .footer-right {
     border: 1px solid white;
 } */
 
-.debug nav ul li {
-    /* width: 50px;
-    height: 50px; */
-    /* background-color: turquoise;
-    border: 1px solid white; */
-}
+/* .debug nav ul li {
+    width: 50px;
+    height: 50px;
+    background-color: turquoise;
+    border: 1px solid white;
+} */
 
-.debug .title {
-    /* background-color: violet; */
-}
+/* .debug .title {
+    background-color: violet;
+} */
 
-.debug .row {
-    /* height: 200px; */
-    /* width: 100%; */
-    /* background-color: yellow; */
-    /* border: 1px solid white; */
-}
+/* .debug .row {
+    height: 200px; 
+    width: 100%; 
+    background-color: yellow; 
+    border: 1px solid white; 
+} */
 
-.debug .song {
-    /* height: 150px;
-    width: 100px; */
-    /* background-color: blue; */
-    /* border: 1px solid black; */
-}
+/* .debug .song {
+    height: 150px;
+    width: 100px; 
+    background-color: blue;
+    border: 1px solid black;
+} */
 
-.debug .song-cover {
-    /* height: 70px;
-    width: 100%; */
-    /* background-color: chartreuse; */
-}
+/* .debug .song-cover {
+    height: 70px;
+    width: 100%; 
+    background-color: chartreuse; 
+} */
 
-.debug .song-title {
-    /* height: 40px;
-    width: 100%; */
-    /* background-color: red; */
-}
+/* .debug .song-title {
+    height: 40px;
+    width: 100%; 
+    background-color: red; 
+} */
 
-.debug footer {
+/* .debug footer {
     width: 100vw;
-    /* background-color: lightsalmon; */
-    /* border: 1px solid white; */
-    /* z-index: 999 */
-}
+    background-color: lightsalmon; 
+    border: 1px solid white; 
+    z-index: 999;
+} */
 
-.debug .footer-left {
-    /* width: 20%;
+/* .debug .footer-left {
+    width: 20%;
     height: 100%;
-    background-color: coral; */
-}
+    background-color: coral;
+} */
 
-.debug .footer-center {
-    /* width: 50%;
+/* .debug .footer-center {
+    width: 50%;
     height: 100%;
-    background-color: red; */
-}
+    background-color: red;
+} */
 
-.debug .footer-right {
-    /* width: 20%;
-    height: 100%; */
-    /* background-color: yellow; */
-}
+/* .debug .footer-right {
+     width: 20%;
+    height: 100%;
+    background-color: yellow;
+} */

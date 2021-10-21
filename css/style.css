@@ -23,7 +23,7 @@ body {
 .col-left .show {
     color: #808080;
     margin-left: 3px;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 600;
     display: none;
 } 
@@ -52,7 +52,16 @@ h4 {
     font-size: 13px;
 }
 
-/* *** mobile-first format -bootstrap default 576px (min-width: 0px)*** */
+.white:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.underline:hover {
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+}
 
 /* *** spotify interface left *** */
 .col-left {
@@ -69,6 +78,7 @@ h4 {
 
 .icon-top, 
 .icon-bottom {
+    margin-left: 10px;
     padding: 10px;
 }
 
@@ -92,11 +102,18 @@ h4 {
 
 #download img {
     width: 20px;
+    margin-right: 10px;
+}
+
+hr {
+    margin: 0px 15px;
+    border: 1px solid #484848;
 }
 
 #profile img {
     height: 35px;
     width: 35px;
+    margin-right: 5px;
     background-color: #808080;
     border-radius: 50%;
 }
@@ -262,6 +279,12 @@ footer .footer-left img {
 
 i#play {
     font-size: 35px;
+    transition: transform 1ms;
+}
+
+i#play:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 footer .footer-center .bottom-bar {
@@ -281,6 +304,7 @@ footer .footer-center .bottom-bar {
     height: 5px;
     background-color: #5a5a5a;
     border-radius: 13px;
+    position: relative;
   }
 
 .progressbar>div {
@@ -288,7 +312,12 @@ footer .footer-center .bottom-bar {
     width: 30%;
     height: 100%;
     border-radius: 10px;
-  }
+}
+
+.progressbar>div:hover {
+    background-color: #adff2f;
+    cursor: pointer;
+}
 
 footer .footer-right {
     line-height: 100px;
@@ -413,6 +442,15 @@ footer .footer-right {
 }
 
 @media screen and (min-width: 992px) {
+    main .row .song {
+        width: 200px;
+        margin: 10px;
+    }
+
+    footer {
+        justify-content: space-between;
+    }
+
     .footer-center {
         width: 50%;
     }
